@@ -1,4 +1,4 @@
-owntag
+Creating custom HTML tags with Lodash
 ======
 
 Create your own HTML tags with Lodash template engine. To know more, please look at the article: .
