@@ -1,7 +1,7 @@
 Creating custom HTML tags with Lodash
 ======
 
-Create your own HTML tags with Lodash template engine. To know more, please look at the article: .
+Create your own HTML tags with Lodash template engine. To know more, please look at the article: https://vickev.com/#!/article/creating-custom-html-tags-with-lodash-template-engine.
 
 Test the code
 ---------------------
