@@ -1,0 +1,48 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  </head>
+  <body style="padding: 50px;">
+      Loading...
+    <script type="text/javascript" src="libs/moment.min.js"></script>
+    <script type="text/javascript" src="libs/lodash.js"></script>
+    <script type="text/javascript" src="libs/require.js"></script>
+    <script type="text/javascript" src="libs/jquery.js"></script>
+    <script type="text/javascript" src="libs/backbone.js"></script>
+    <script type="text/javascript" src="libs/backbone.marionette.js"></script>
+    <script type="text/javascript" src="libs/backbone.marionette.helpers.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.js"></script>
+    <!-- build:js build.js -->
+    <script type="text/javascript" src="scripts/config.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        App = new Marionette.Application();
+        $(function(){
+            /*
+            var helper = function(type, data, __content){
+                console.log(arguments);
+                return "[" + type + "]" + (__content ? (__content + "[/" + type + "]") : "");
+            };
+            var oldTemplate = _.template;
+            _.template = function(text, d, settings){
+                if (d) {
+                    var data = _.extend({helper: helper}, d);
+
+                    if (typeof(text) === 'function')
+                        return text(data);
+                    return oldTemplate(text, data, settings);
+                }
+
+                var compiled = (typeof(text) === 'function') ? text : oldTemplate(text, d, settings);
+                return function(d){
+                    var data = _.extend({helper: helper}, d);
+                    return compiled(data);
+                };
+            };
+            */
+
+            require(['App']);
+        });
+    </script>
+  </body>
+</html>
